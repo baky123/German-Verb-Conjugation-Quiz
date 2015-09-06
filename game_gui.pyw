@@ -42,8 +42,7 @@ class MainMenuFrame(tk.Frame):
         self.parent = parent
         self.create_gui()
     def create_gui(self):
-        tk.Button(self, text="Play!", command=self.play, padx=200, pady=20).pack()
-        tk.Button(self, text="Quit!", command=self.quit, padx=200, pady=20).pack()
+        tk.Label(self, text = "German Verb Game").pack(padx = 100, pady = 10)
     def play(self):
         self.parent.play()
 
